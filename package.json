@@ -1,0 +1,15 @@
+{
+  "name": "myomancy-nyc",
+  "version": "1.0.0",
+  "description": "Divine the future using NYC rat sightings",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "server": "./node_modules/browser-sync/dist/bin.js --server --files '*'"
+  },
+  "author": "Patrick McCarver",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.10"
+  }
+}
