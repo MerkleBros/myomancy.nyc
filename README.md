@@ -23,3 +23,27 @@ Clone the repo and `npm install`, then start a local hot-reload server using `np
 - - - - Can compare rat sightings in the divine triangle versus recent historical data and say whether rat sightings are 'rising', 'falling', 'immovable'
 - - - Third point is weighted average of rat sightings in the city ('rat center?')
 - - - Could incorporate whether the reading was taken during or after the hour of the rat somehow (11:00pm-1:00am)
+
+### React components
+- Root
+- - AppControl
+- - - IntroView
+- - - IdolView
+- - - StarSignView
+- - - MapView
+- - - DivinationView
+- - - ContinueButton
+- - - IdolButton
+- - - StarSignButton
+
+### Layout
+- - Root container launches AppControl
+- - - AppControl
+- - - Controls the app by conditionally rendering the app stages and capturing user choices, calculating state data
+- - - State:
+- - - - idol
+- - - - starSign
+- - - - ratGeoJSON
+- - - User flow
+- - - - User shown intro flash screen with rat art, explaining what myomancy is and asking them to hit CONTINUE BUTTON to divine the future with NYC rat data
+- - - - User hits CONTINUE BUTTON, user shown list of IDOL BUTTONS to choose from, user clicks on an IDOL BUTTON for the given IDOL which saves that idol in state
