@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "server": "./node_modules/browser-sync/dist/bin.js --server --files '*'"
+    "parcel": "parcel index.html"
   },
   "author": "Patrick McCarver",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.27.10"
+    "parcel": "^2.3.2",
+    "process": "^0.11.10"
   },
   "dependencies": {
     "react": "^17.0.2",
